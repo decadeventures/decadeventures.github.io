@@ -91,7 +91,7 @@ $social_mobile_height: 280px;
 
 		.fixed-nav & {
 			h4 {
-				display: none;
+				opacity: 0;
 			}
 		}
 	}
@@ -116,9 +116,11 @@ $social_mobile_height: 280px;
 	z-index: 11;
 	margin: 0;
 	padding: 0;
+	background: $warmwhite;
+	color: $darkgreen;
 	@include media-breakpoint-up(md) {
-		background: $warmwhite;
-		color: $darkgreen;
+		background: $darkgreen;
+		color: $warmwhite;
 	}
 
 	.sections_wrapper {
