@@ -1,0 +1,83 @@
+/* Decade Ventures */
+
+@import "bootstrap/bootstrap.scss";
+
+$warmwhite: #FCFCF5;
+$darkgreen: #0F2112;
+$green: #5EBA78;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 375px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+
+
+* {
+  -webkit-overflow-scrolling: touch;
+  -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  font-smoothing: antialiased !important;
+	outline: none;
+	font-family: 'Authentic Sans', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	font-weight: 400;
+
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+
+
+	&:hover {
+		outline: none;
+	}
+
+	&::-webkit-scrollbar {
+	  display: none;
+	}
+}
+
+
+
+body {
+	background: $darkgreen;
+	color: $warmwhite;
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Authentic Sans', 'Helvetica', 'Arial', sans-serif;
+	line-height: 1.3;
+
+	p {
+		font-weight: 300;
+		font-size: 15px;
+	}
+	a {
+		color: inherit;
+		&:hover {
+			color: $green;
+		}
+	}
+	h1 {
+		font-size: 80px;
+	}
+	h2 {
+		font-size: 18px;
+		line-height: 1.3
+	}
+	h3 {
+		font-size: 20px;
+		font-weight: 500;
+	}
+	h4 {
+		font-size: 16px;
+	}
+
+}
+
+
+@import "home.scss";

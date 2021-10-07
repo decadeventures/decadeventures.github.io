@@ -1,0 +1,88 @@
+//main: main.scss
+
+#main {
+	width: 100vw;
+	margin: 0;
+	section {
+		margin: 0;
+	}
+}
+
+.socials {
+	width: 100%;
+	ul {
+		width: 100%;
+		padding: 0 50px;
+		margin: 0;
+		li {
+			list-style: none;
+			a {
+				text-transform: uppercase;
+				text-decoration: none;
+				text-align: center;
+				font-size: 13px;
+				font-weight: 500;
+
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+
+#left_side {
+	height: 100vh;
+	padding: 50px 80px;
+
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	left: 0;
+
+	.top img {
+		width: 100%;
+	}
+
+	#decade_logo_main {
+		max-width: 300px;
+		margin: 40px;
+	}
+	h4 {
+		text-align: center;
+		margin: 0;
+	}
+
+}
+
+#right_side {
+	padding: 50vh 100px 50px 70px;
+	background: $warmwhite;
+	color: $darkgreen;
+
+	.section_wrapper {
+		max-width: 550px;
+		margin: 0 auto;
+	}
+
+
+	h2 {
+		text-align: center;
+		margin: 5px auto 0;
+		br {
+		}
+	}
+
+	.info_section {
+		margin: 40vh 0;
+		&:first-child {
+			margin-top: 0;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			transform: translateY(-50%)
+		}
+	}
+
+}
