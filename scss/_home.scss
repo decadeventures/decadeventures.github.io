@@ -118,23 +118,20 @@ $social_mobile_height: 280px;
 	padding: 0;
 	background: $warmwhite;
 	color: $darkgreen;
-	@include media-breakpoint-up(md) {
-		background: $darkgreen;
-		color: $warmwhite;
-	}
 
+	@include media-breakpoint-down(md) {
+		margin-bottom: $social_mobile_height !important;
+	}
 	.sections_wrapper {
-		@include media-breakpoint-down(md) {
-			margin-bottom: $social_mobile_height !important;
-		}
+		position: relative;
+		z-index: 10;
+		background: $warmwhite;
 	}
 
 	.sections {
 		max-width: 600px;
 		margin: 0 auto;
 		color: $darkgreen;
-		position: relative;
-		z-index: 10;
 
 		padding: 50vh 100px 50px 70px;
 		padding: -webkit-calc(50 * var(--vh)) 100px 50px 70px;
@@ -189,6 +186,7 @@ $social_mobile_height: 280px;
 	width: 100%;
 	height: $social_desktop_height;
 
+
 	@include media-breakpoint-down(md) {
 		display: none;
 		.fixed-nav & {
@@ -200,6 +198,8 @@ $social_mobile_height: 280px;
 		bottom:0;
 		left: 0;
 
+		background: $darkgreen;
+		color: $warmwhite;
 
 	}
 

@@ -10837,25 +10837,22 @@ body .legal {
   color: #0F2112;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767.98px) {
   #right_side {
-    background: #0F2112;
-    color: #FCFCF5;
+    margin-bottom: 280px !important;
   }
 }
 
-@media (max-width: 767.98px) {
-  #right_side .sections_wrapper {
-    margin-bottom: 280px !important;
-  }
+#right_side .sections_wrapper {
+  position: relative;
+  z-index: 10;
+  background: #FCFCF5;
 }
 
 #right_side .sections {
   max-width: 600px;
   margin: 0 auto;
   color: #0F2112;
-  position: relative;
-  z-index: 10;
   padding: 50vh 100px 50px 70px;
   padding: -webkit-calc(50 * var(--vh)) 100px 50px 70px;
   padding: -moz-calc(50 * var(--vh)) 100px 50px 70px;
@@ -10920,6 +10917,8 @@ body .legal {
     position: fixed;
     bottom: 0;
     left: 0;
+    background: #0F2112;
+    color: #FCFCF5;
   }
   .fixed-nav .socials {
     display: block;
