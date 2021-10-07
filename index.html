@@ -34,7 +34,7 @@
 		document.documentElement.style.setProperty('--vh', `${vh}px`);
 	</script>
 
-	<link rel="stylesheet" href="scss/main.css?v=0.31">
+	<link rel="stylesheet" href="scss/main.css?v=0.4">
 </head>
 
 
@@ -130,13 +130,9 @@
 <script type="text/javascript">
 	const nav = document.querySelector('#left_side');
 	const navTop = nav.clientHeight;
-	const buffer = 30;
-
-	console.log('navTop = ' + navTop);
+	const buffer = 50;
 
 	function stickyNavigation() {
-		console.log('scrollY = ' + window.scrollY);
-
 		if (window.scrollY >= navTop - buffer) {
 			// nav offsetHeight = height of nav
 			document.body.classList.add('fixed-nav');

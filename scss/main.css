@@ -10742,7 +10742,7 @@ body .legal {
   top: 0;
   left: 0;
   background: #0F2112;
-  padding: 20px 30px;
+  padding: 20px 25px;
 }
 
 @media (min-width: 768px) {
@@ -10791,6 +10791,11 @@ body .legal {
   opacity: 1;
 }
 
+#mobile_top .logo_sticky img {
+  display: inline-block;
+  margin: 0 auto;
+}
+
 #left_side {
   height: 100vh;
   height: -webkit-calc(100 * var(--vh));
@@ -10810,7 +10815,7 @@ body .legal {
     height: -webkit-calc(60 * var(--vh));
     height: -moz-calc(60 * var(--vh));
     height: calc(60 * var(--vh));
-    padding: 25px 30px 50px;
+    padding: 25px 25px 50px;
   }
   .fixed-nav #left_side h4, .fixed-nav #left_side .h4 {
     opacity: 0;
@@ -10864,16 +10869,24 @@ body .legal {
 
 @media (max-width: 767.98px) {
   #right_side .sections {
-    padding: 25vh 30px 50px;
-    padding: -webkit-calc(25 * var(--vh)) 30px 50px;
-    padding: -moz-calc(25 * var(--vh)) 30px 50px;
-    padding: calc(25 * var(--vh)) 30px 50px;
+    padding: 25vh 25px 50px;
+    padding: -webkit-calc(25 * var(--vh)) 25px 50px;
+    padding: -moz-calc(25 * var(--vh)) 25px 50px;
+    padding: calc(25 * var(--vh)) 25px 50px;
   }
 }
 
 #right_side h2, #right_side .h2 {
   text-align: center;
   margin: 5px auto 0;
+}
+
+#right_side ul {
+  padding-left: 22px;
+}
+
+#right_side ul li {
+  line-height: 1.4;
 }
 
 #right_side .info_section {
@@ -10936,7 +10949,7 @@ body .legal {
 
 @media (max-width: 767.98px) {
   .socials ul {
-    padding: 40px 30px;
+    padding: 40px 25px;
   }
 }
 
