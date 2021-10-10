@@ -10900,6 +10900,11 @@ LEFT HAND SIDE
   }
 }
 
+.fixed-nav .socials.left {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .socials ul {
   width: 100%;
   padding: 0 50px;

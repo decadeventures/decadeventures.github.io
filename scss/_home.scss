@@ -140,7 +140,13 @@ LEFT HAND SIDE
 		}
 		background: $darkgreen;
 		color: $warmwhite;
+	}
 
+	&.left {
+		.fixed-nav & {
+			opacity: 0;
+			visibility: hidden;
+		}
 	}
 
 	ul {
