@@ -220,6 +220,9 @@ RIGHT HAND SIDE
 	.detail {
 		p {
 			font-weight: 400;
+			@include media-breakpoint-down(md) {
+				font-size: 18px;
+			}
 		}
 		ul {
 			padding-left: 22px;
