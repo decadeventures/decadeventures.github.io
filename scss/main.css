@@ -10890,19 +10890,29 @@ LEFT HAND SIDE
 }
 
 @media (max-width: 767.98px) {
-  .socials {
+  .fixed-nav .socials.left {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.footer_section_mobile .socials {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 767.98px) {
+  .footer_section_mobile .socials {
     display: none;
     background: #0F2112;
     color: #FCFCF5;
   }
-  .fixed-nav .socials {
+  .fixed-nav .footer_section_mobile .socials {
     display: block;
   }
 }
 
-.fixed-nav .socials.left {
-  opacity: 0;
-  visibility: hidden;
+.footer_section_mobile .socials a {
+  font-size: 16px;
 }
 
 .socials ul {
@@ -11150,20 +11160,14 @@ RIGHT HAND SIDE
   }
 }
 
-.fixed-nav .footer_section_mobile {
-  display: -webkit-box !important;
-  display: -webkit-flex !important;
-  display: -moz-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-
-.footer_section_mobile .socials {
-  margin-bottom: 60px;
-}
-
-.footer_section_mobile .socials a {
-  font-size: 16px;
+@media (max-width: 767.98px) {
+  .fixed-nav .footer_section_mobile {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
 }
 
 .legal {

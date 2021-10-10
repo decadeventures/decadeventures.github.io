@@ -133,19 +133,29 @@ LEFT HAND SIDE
 .socials {
 	width: 100%;
 
-	@include media-breakpoint-down(md) {
-		display: none;
-		.fixed-nav & {
-			display: block;
+	&.left {
+		@include media-breakpoint-down(md) {
+			.fixed-nav & {
+				opacity: 0;
+				visibility: hidden;
+			}
 		}
-		background: $darkgreen;
-		color: $warmwhite;
 	}
 
-	&.left {
-		.fixed-nav & {
-			opacity: 0;
-			visibility: hidden;
+	.footer_section_mobile & {
+		margin-bottom: 60px;
+
+		@include media-breakpoint-down(md) {
+			display: none;
+			.fixed-nav & {
+				display: block;
+			}
+			background: $darkgreen;
+			color: $warmwhite;
+		}
+
+		a {
+			font-size: 16px;
 		}
 	}
 
@@ -368,14 +378,16 @@ RIGHT HAND SIDE
 	@include media-breakpoint-up(md) {
 		display: none !important;
 	}
-
-	.fixed-nav & {
-		display: -webkit-box !important;
-		display: -webkit-flex !important;
-		display: -moz-box !important;
-		display: -ms-flexbox !important;
-		display: flex !important;
+	@include media-breakpoint-down(md) {
+		.fixed-nav & {
+			display: -webkit-box !important;
+			display: -webkit-flex !important;
+			display: -moz-box !important;
+			display: -ms-flexbox !important;
+			display: flex !important;
+		}
 	}
+
 
 
 	width: 100%;
@@ -390,12 +402,6 @@ RIGHT HAND SIDE
 	background: $darkgreen;
 	color: $warmwhite;
 
-	.socials {
-		margin-bottom: 60px;
-		a {
-			font-size: 16px;
-		}
-	}
 }
 
 
