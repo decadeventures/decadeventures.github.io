@@ -245,6 +245,11 @@ RIGHT HAND SIDE
 				&:hover {
 					background: #EEF0E8;
 				}
+
+				@include media-breakpoint-down(md) {
+					margin: 0 auto;
+					width: 110px;
+				}
 			}
 		}
 		.funders {
@@ -350,9 +355,19 @@ RIGHT HAND SIDE
 }
 
 .footer_section_mobile {
+	display: none !important;
 	@include media-breakpoint-up(md) {
 		display: none !important;
 	}
+
+	.fixed-nav & {
+		display: -webkit-box !important;
+		display: -webkit-flex !important;
+		display: -moz-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+	}
+
 
 	width: 100%;
 	height: $footer_mobile_height;

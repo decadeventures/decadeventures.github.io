@@ -10975,6 +10975,13 @@ RIGHT HAND SIDE
   background: #EEF0E8;
 }
 
+@media (max-width: 767.98px) {
+  #right_side .funding .founders .button {
+    margin: 0 auto;
+    width: 110px;
+  }
+}
+
 #right_side .funding .funders {
   margin-top: 30px;
 }
@@ -11083,6 +11090,7 @@ RIGHT HAND SIDE
 }
 
 .footer_section_mobile {
+  display: none !important;
   width: 100%;
   height: 350px;
   position: fixed;
@@ -11097,6 +11105,14 @@ RIGHT HAND SIDE
   .footer_section_mobile {
     display: none !important;
   }
+}
+
+.fixed-nav .footer_section_mobile {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .footer_section_mobile .socials {
