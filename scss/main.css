@@ -10648,6 +10648,38 @@ fieldset:disabled .btn {
   }
 }
 
+@font-face {
+  font-family: 'Authentic Sans';
+  src: url("../fonts/authentic_sans/AUTHENTICSans-60.woff2") format("woff2"), url("../fonts/authentic_sans/AUTHENTICSans-60.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Authentic Sans';
+  src: url("../fonts/authentic_sans/AUTHENTICSans-90.woff2") format("woff2"), url("../fonts/authentic_sans/AUTHENTICSans-90.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Authentic Sans';
+  src: url("../fonts/authentic_sans/AUTHENTICSans-130.woff2") format("woff2"), url("../fonts/authentic_sans/AUTHENTICSans-130.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Authentic Sans';
+  src: url("../fonts/authentic_sans/AUTHENTICSans-150.woff2") format("woff2"), url("../fonts/authentic_sans/AUTHENTICSans-150.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   -webkit-overflow-scrolling: touch;
   -webkit-box-sizing: border-box;
@@ -10695,12 +10727,12 @@ body a:hover {
 
 body h1, body .h1 {
   font-size: 80px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 body h2, body .h2 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.3;
 }
 
@@ -10712,8 +10744,7 @@ body h2, body .h2 {
 
 body h3, body .h3 {
   font-size: 20px;
-  font-weight: 500;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 body h4, body .h4 {
@@ -10893,7 +10924,7 @@ LEFT HAND SIDE
   text-decoration: none;
   text-align: center;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   display: block;
   margin: 0 auto;
 }
