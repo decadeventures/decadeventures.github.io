@@ -10852,6 +10852,16 @@ LEFT HAND SIDE
   z-index: 10;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #left_side {
+    width: 90%;
+    height: 60vh;
+    height: -webkit-calc(60 * var(--vh));
+    height: -moz-calc(60 * var(--vh));
+    height: calc(60 * var(--vh));
+  }
+}
+
 @media (max-width: 767.98px) {
   #left_side {
     height: 60vh;
@@ -10874,8 +10884,16 @@ LEFT HAND SIDE
 }
 
 #left_side #decade_logo_main {
-  width: 300px;
+  width: 23vw;
+  min-width: 200px;
+  max-width: 300px;
   margin: 45px 40px 40px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #left_side #decade_logo_main {
+    width: 300px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -10975,7 +10993,7 @@ LEFT HAND SIDE
 RIGHT HAND SIDE
 */
 #right_side {
-  min-width: 520px;
+  min-width: 510px;
   position: relative;
   z-index: 11;
   margin: 0;
@@ -11002,6 +11020,12 @@ RIGHT HAND SIDE
   margin: 0 auto;
   color: #0F2112;
   padding: 0 100px 50px 70px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #right_side .sections {
+    padding: 0 70px 50px 70px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -11094,6 +11118,15 @@ RIGHT HAND SIDE
   position: relative;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #right_side .info_section.hero {
+    height: 40vh;
+    height: -webkit-calc(40 * var(--vh));
+    height: -moz-calc(40 * var(--vh));
+    height: calc(40 * var(--vh));
+  }
+}
+
 @media (max-width: 767.98px) {
   #right_side .info_section.hero {
     height: 40vh;
@@ -11153,7 +11186,12 @@ RIGHT HAND SIDE
 
 #right_side .info_section .profile .picture {
   background: darkgray;
-  aspect-ratio: 1 / 1;
+  width: 10vh;
+  height: 10vh;
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 220px;
+  max-height: 220px;
   margin: 20px 0;
 }
 
@@ -11198,27 +11236,6 @@ RIGHT HAND SIDE
     margin: 10px 0 40px;
   }
   .legal.inside {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .o2 .profile {
-    max-width: 80%;
-  }
-}
-
-.o2 .picture {
-  max-width: 150px;
-}
-
-.o3 .info {
-  margin: 20px 0;
-  padding: 10px 0 10px 20px;
-}
-
-@media (max-width: 767.98px) {
-  .o3 {
     display: none;
   }
 }

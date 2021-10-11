@@ -8,35 +8,36 @@
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 
-	<meta http-equiv="Pragma" content="no-cache">
-
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="BrunoSantos@brunobrunodesigndesign.com">
-
-	<link rel="apple-touch-icon" sizes="76x76" href="">
-	<link rel="icon" type="image/png" sizes="32x32" href="">
-	<link rel="icon" type="image/png" sizes="16x16" href="">
-	<link rel="mask-icon" href="" color="#0F2112">
-	<link rel="shortcut icon" href="">
-	<meta name="msapplication-TileColor" content="#0F2112">
-	<meta name="msapplication-config" content="">
-	<meta name="theme-color" content="#0F2112">
-
-	<meta property="og:image:height" content="301">
-	<meta property="og:image:width" content="574">
-	<meta property="og:description" content="">
-	<meta property="og:title" content="Decade Ventures">
-	<meta property="og:url" content="meta" property="og:image" content="/meta/og-image.jpg">
-
 	<title>Decade Ventures</title>
+	<meta name="description" content="Remote incubation for climate adaptation startups (2022 - 2031)">
+	<meta name="keywords" content="">
+	<meta name="author" content="hello@bru-no.com">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/share/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/share/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/share/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/share/favicon/site.webmanifest">
+	<link rel="mask-icon" href="assets/share/favicon/safari-pinned-tab.svg" color="#0f2112">
+	<link rel="shortcut icon" href="assets/share/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ff0000">
+	<meta name="msapplication-config" content="assets/share/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#0f2112">
+
+	<!-- Share Image -->
+	<meta property="og:image:width" content="1103">
+	<meta property="og:image:height" content="577">
+	<meta property="og:title" content="Decade Ventures">
+	<meta property="og:description" content="Remote incubation for climate adaptation startups (2022 - 2031)">
+	<meta property="og:image" content="assets/share/og-image.jpg">
+	<meta property="og:url" content="https://decade-ventures.com/">
 
 	<script type="text/javascript">
 		let vh = window.innerHeight * 0.01;
 		document.documentElement.style.setProperty('--vh', `${vh}px`);
 	</script>
 
-	<link rel="stylesheet" href="scss/main.css?v=0.97">
+	<link rel="stylesheet" href="scss/main.css?v=1">
 </head>
 
 
@@ -46,7 +47,7 @@
 
 		<main id="main" class="row d-flex justify-content-center">
 
-			<section id="left_side" class="col-md-6 col-lg-7 d-flex flex-column justify-content-between align-items-center">
+			<section id="left_side" class="col-md-6 col-xl-7 d-flex flex-column justify-content-between align-items-center">
 				<div class="top">
 					<img src="assets/timeline.png" alt="">
 				</div>
@@ -75,7 +76,7 @@
 				</div>
 			</div>
 
-			<section id="right_side" class="container col-md-6 col-lg-5 d-flex justify-content-center">
+			<section id="right_side" class="container col-md-6 col-xl-5 d-flex justify-content-center">
 
 				<div class="sections_wrapper">
 					<div class="sections">
@@ -174,7 +175,7 @@
 	const nav = document.querySelector('#left_side');
 	const navTop = nav.clientHeight;
 	var buffer;
-	if (window.matchMedia("screen and (max-width: 767.98px)").matches) {
+	if (window.matchMedia("screen and (max-width: 768px)").matches) {
 		buffer = 50; // mobile
 	} else {
 		buffer = window.innerHeight * 0.7; // desktop
@@ -184,8 +185,10 @@
 		if (window.scrollY >= navTop - buffer) {
 			// nav offsetHeight = height of nav
 			document.body.classList.add('fixed-nav');
+			console.log(window.scrollY, navTop, buffer);
 		} else {
 			document.body.classList.remove('fixed-nav');
+			console.log(window.scrollY, navTop, buffer);
 		}
 	}
 

@@ -1,0 +1,16 @@
+{
+    "name": "Decade Ventures",
+    "short_name": "Decade Ventures",
+    "icons": [
+        {
+            "src": "android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#0f2112",
+    "background_color": "#0f2112",
+    "start_url": "https://decade-ventures.com/",
+    "display": "standalone",
+    "orientation": "portrait"
+}
